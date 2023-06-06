@@ -1,0 +1,11 @@
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajustez la hauteur selon vos besoins */
+  }
+  
+  canvas {
+    max-width: 50%;
+    max-height: 60%;
+  }

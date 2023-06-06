@@ -15,24 +15,24 @@ export class LineChartComponent {
   }
 
   createChart(){
-  
+    var les_mois=['janvier','fevrier','mars']
+    var les_jours=[31,28,31]
+    var nombre_d = [4,3,4]
     this.chart = new Chart("MyChart", {
       type: 'line', //this denotes tha type of chart
 
       data: {// values on X-Axis
-        labels: ['2022-05-10', '2022-05-11', '2022-05-12','2022-05-13',
-								 '2022-05-14', '2022-05-15', '2022-05-16','2022-05-17', ], 
+        labels: les_mois,
+
 	       datasets: [
           {
-            label: "Sales",
-            data: ['467','576', '572', '79', '92',
-								 '574', '573', '576'],
+            label: "N_jours",
+            data: les_jours,
             backgroundColor: 'blue'
           },
           {
-            label: "Profit",
-            data: ['542', '542', '536', '327', '17',
-									 '0.00', '538', '541'],
+            label: "monbre de dimanche",
+            data: nombre_d,
             backgroundColor: 'limegreen'
           }  
         ]
